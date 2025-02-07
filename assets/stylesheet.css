@@ -1,0 +1,114 @@
+/*s design untuk semua page website*/
+html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+.navbar {
+    padding: 1rem 0;
+    background-color: #000000 !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.hero-section {
+    background: rgb(111, 5, 163);
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 2rem;
+}
+
+.feature-card {
+    color: white;
+    border: none;
+    transition: transform 0.3s;
+    padding: 20px;
+    margin-bottom: 1rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-card {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.25rem;
+}
+
+.btn-lg {
+    padding: 0.75rem 2rem;
+}
+
+.btn-secondary {
+    background-color: rgb(60, 255, 0);
+    color: #000000;
+}
+
+.table-responsive {
+    margin-bottom: 2rem;
+}
+
+.table th {
+    background-color: #000000;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: auto; 
+    text-align: center;
+    width: 100%;
+}
+
+.alert {
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .form-card {
+        margin: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+}
